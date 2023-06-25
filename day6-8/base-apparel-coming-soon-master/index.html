@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <img src="images/logo.svg" alt="" class="nav__logo">
+  </nav>
+
+  <main class="main">
+    <img alt="" class="hero__image">
+    
+    <div class="hero__content">
+      <img src="images/logo.svg" alt="" class="hero__logo">
+      
+      <div class="hero__text">
+        <h1 class="hero__coming-soon"><span>We're</span> coming soon</h1>
+
+        <p class="hero__description">
+          Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+      </div>
+
+      <form id="hero__form">
+        <img src="images/icon-error.svg" id="email__icon-error" class="email__icon-error">
+        <input type="text" name="email" id="form__email" class="form__email" placeholder="Email Address">
+        <p id="email__error" class="email__error">Please provide a valid email</p>
+
+        <button type="submit" class="form__button">
+          <img src="images/icon-arrow.svg" alt="" class="button__icon-arrow">
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/dwz-wong" target="_blank">HL Wong</a>.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

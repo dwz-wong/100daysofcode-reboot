@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Inter", sans-serif;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 2rem 1rem;
+}
+.nav .nav__logo {
+  height: auto;
+  width: 100%;
+  display: block;
+  max-width: 50px;
+}
+.nav .nav__list {
+  list-style-type: none;
+  display: none;
+}
+.nav .nav__list .nav__item .nav__link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.nav .nav__list .nav__item .nav__link:hover {
+  color: hsl(5, 85%, 63%);
+}
+.nav .nav__menu-icon {
+  height: auto;
+  width: 100%;
+  display: block;
+  max-width: 45px;
+}
+
+.nav__menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.nav__menu .menu__container {
+  height: 100%;
+  width: 68%;
+  float: right;
+  padding: 2rem;
+  background-color: rgb(255, 255, 255);
+}
+.nav__menu .menu__container .menu__close-icon {
+  height: auto;
+  width: 100%;
+  display: block;
+  max-width: 40px;
+  margin-left: auto;
+}
+.nav__menu .menu__container .menu__list {
+  list-style-type: none;
+  display: grid;
+  row-gap: 2.4rem;
+  margin-top: 7rem;
+}
+.nav__menu .menu__container .menu__list .menu__item .menu__link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+}
+
+/* MAIN */
+.main {
+  padding: 0.5rem 1rem;
+}
+.main .hero__container .hero__image {
+  content: url("assets/images/image-web-3-mobile.jpg");
+  height: auto;
+  width: 100%;
+  display: block;
+}
+.main .hero__container .hero__title {
+  margin-top: 1.8rem;
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 800;
+}
+.main .hero__container .hero__content {
+  margin-top: 1.5rem;
+}
+.main .hero__container .hero__content .hero__description {
+  color: hsl(236, 13%, 42%);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.main .hero__container .hero__content .hero__button {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 1rem 0;
+  width: 100%;
+  max-width: 190px;
+  border: none;
+  letter-spacing: 0.3rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: hsl(5, 85%, 63%);
+  text-transform: uppercase;
+}
+.main .hero__container .hero__content .hero__button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+.main .hero__container .hero__aside {
+  margin-top: 4rem;
+  padding: 1.5rem 1.2rem;
+  background-color: hsl(240, 100%, 5%);
+}
+.main .hero__container .hero__aside h2 {
+  font-size: 1.8rem;
+  color: hsl(35, 77%, 62%);
+}
+.main .hero__container .hero__aside h3 {
+  cursor: pointer;
+  margin-top: 2rem;
+  font-size: 1.27rem;
+  color: rgb(255, 255, 255);
+}
+.main .hero__container .hero__aside h3:hover {
+  color: hsl(35, 77%, 62%);
+}
+.main .hero__container .hero__aside p {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: hsl(233, 8%, 79%);
+}
+.main .hero__container .hero__aside hr {
+  margin-top: 2rem;
+  opacity: 0.5;
+}
+.main .hero__news {
+  margin-top: 4rem;
+  display: grid;
+  row-gap: 2.2rem;
+}
+.main .hero__news .news__container {
+  display: flex;
+  gap: 1.6rem;
+}
+.main .hero__news .news__container .news__image {
+  height: auto;
+  width: 100%;
+  display: block;
+  max-width: 100px;
+}
+.main .hero__news .news__container .news__content h2 {
+  font-size: 1.8rem;
+  color: hsl(233, 8%, 79%);
+}
+.main .hero__news .news__container .news__content h3 {
+  cursor: pointer;
+  margin-top: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+.main .hero__news .news__container .news__content h3:hover {
+  color: hsl(5, 85%, 63%);
+}
+.main .hero__news .news__container .news__content p {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: hsl(236, 13%, 42%);
+}
+
+@media screen and (min-width: 769px) {
+  .nav {
+    padding: 2rem;
+  }
+  .nav .nav__logo {
+    max-width: 60px;
+  }
+  .nav .nav__list {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav .nav__list .nav__item .nav__link {
+    color: hsl(236, 13%, 42%);
+  }
+  .nav .nav__menu-icon {
+    display: none;
+  }
+  .main {
+    padding: 1rem 2rem;
+  }
+  .main .hero__container {
+    display: grid;
+    grid-template-areas: "hero-image hero-image hero-image" "hero-title hero-content hero-content" "hero-aside hero-aside hero-aside";
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
+  }
+  .main .hero__container .hero__image {
+    content: url("assets/images/image-web-3-desktop.jpg");
+    grid-area: hero-image;
+  }
+  .main .hero__container .hero__title {
+    grid-area: hero-title;
+    margin-top: 2.2rem;
+    font-size: 3.5rem;
+  }
+  .main .hero__container .hero__content {
+    grid-area: hero-content;
+    margin-top: 2.2rem;
+  }
+  .main .hero__container .hero__content .hero__description {
+    font-size: 1rem;
+  }
+  .main .hero__container .hero__aside {
+    grid-area: hero-aside;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nav {
+    padding: 3rem 2rem;
+  }
+  .main {
+    padding: 1rem 2rem;
+  }
+  .main .hero__container {
+    grid-template-areas: "hero-image hero-image hero-aside" "hero-title hero-content hero-aside";
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .main .hero__container .hero__title {
+    font-size: 4rem;
+  }
+  .main .hero__container .hero__aside {
+    margin-top: 0;
+    padding: 1.5rem 2rem;
+  }
+  .main .hero__container .hero__aside h2 {
+    font-size: clamp(1rem, 2.5vw, 3rem);
+  }
+  .main .hero__container .hero__aside h3 {
+    margin-top: 2.5rem;
+    font-size: clamp(1rem, 1.4vw, 2rem);
+  }
+  .main .hero__container .hero__aside p {
+    margin-top: 1rem;
+    font-size: clamp(1rem, 1vw, 1.5rem);
+  }
+  .main .hero__container .hero__aside hr {
+    margin-top: 2.5rem;
+  }
+  .main .hero__news {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
