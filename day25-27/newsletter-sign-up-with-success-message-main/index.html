@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="main">
+    <!-- Sign-up form start -->
+    <div class="newsletter__container" id="newsletter__container">
+      <img alt="" class="newsletter__image">
+
+      <div class="newsletter__stay-updated">
+        <h1 class="newsletter__title">Stay updated!</h1>
+        <p class="newsletter__description">Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <ul class="newsletter__list">
+          <li class="newsletter__item">Product discovery and building what matters</li>
+          <li class="newsletter__item">Measuring to ensure updates are a success</li>
+          <li class="newsletter__item">And much more!</li>
+        </ul>
+
+        <form class="newsletter__form" id="newsletter__form">
+          <label for="email">Email address</label>
+          <p class="email__error" id="email__error">Valid email required</p>
+          <input type="email" name="email" id="form__email" placeholder="email@company.com" oninput="checker()">
+
+          <input type="submit" value="Subscribe to monthly newsletter" id="form__submit">
+        </form>
+      </div>
+    </div>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div class="success__container" id="success__container">
+      <img src="assets/images/icon-success.svg" alt="" class="success__logo">
+
+      <h1 class="success__title">Thanks for subscribing!</h1>
+      <p class="success__description">
+        A confirmation email has been sent to <span class="success__email" id="success__email"></span>.
+        Please open it and click the button inside to confirm your subscription
+      </p>
+      <button class="success__button" id="success__button">Dismiss message</button>
+    </div>
+    <!-- Success message end -->
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/dwz-wong">HL Wong</a>.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 1rem;
+}
+
+.main {
+    display: grid;
+    row-gap: 1rem;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.progress-bar {
+    position: relative;
+    height: 15px;
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.progress {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 15px;
+    border-radius: 10px;
+    background-color: green;
+    z-index: -1;
+}
+
+.html {
+    width: 100%;
+    animation-name: progress-100;
+    animation-duration: 4s;
+}
+
+.css {
+    width: 75%;
+    animation-name: progress-75;
+    animation-duration: 4s;
+}
+
+.javascript {
+    width: 50%;
+    animation-name: progress-50;
+    animation-duration: 4s;
+}
+
+.php {
+    width: 25%;
+    animation-name: progress-25;
+    animation-duration: 4s;
+}
+
+
+
+/*
+.progress-bar {
+    position: relative;
+    height: 15px;
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.progress {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 15px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: green;
+    z-index: -1;
+    animation-name: progress;
+    animation-duration: 4s;
+}
+*/
+
+/*
+.line {
+    position: absolute;
+    height: 15px;
+    top: -1px;
+    border: 1px solid black;
+    z-index: -1;
+}
+
+.one { left: 49px; }
+
+.two { left: 98px; }
+
+.three { left: 147px; }
+*/
+
+
+@keyframes progress-25 {
+    0% { width: 0; }
+
+    25% { width: 25%; }
+}
+
+@keyframes progress-50 {
+    0% { width: 0; }
+
+    50% { width: 50%; }
+}
+
+@keyframes progress-75 {
+    0% { width: 0; }
+
+    75% { width: 75%; }
+}
+
+@keyframes progress-100 {
+    0% { width: 0; }
+
+    100% { width: 100%; }
+}
+
+
