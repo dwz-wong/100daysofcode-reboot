@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+/* PRIMARY */
+$red-clr: hsl(1, 90%, 64%);
+$blue-clr: hsl(219, 85%, 26%);
+/* NEUTRAL */
+$white-clr: hsl(0, 0%, 100%);
+$black-clr: rgb(0, 0, 0);
+$very-light-grayish-blue-clr: hsl(210, 60%, 98%);
+$light-grayish-blue-clr-1: hsl(211, 68%, 94%);
+$light-grayish-blue-clr-2: hsl(205, 33%, 90%);
+$grayish-blue-clr: hsl(219, 14%, 63%);
+$dark-grayish-blue-clr: hsl(219, 12%, 42%);
+$very-dark-blue-clr: hsl(224, 21%, 14%);
+/* FONT */
+$plus-jakarta-sans-font: 'Plus Jakarta Sans', sans-serif;
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+
+    a { color: hsl(228, 45%, 44%); }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $plus-jakarta-sans-font;
+}
+
+/* MOBILE FIRST */
+.main {
+    padding: 1.5rem 1rem;
+
+    .container__first {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            font-size: 1.2rem;
+
+            .notifications__no {
+                margin-left: .5rem;
+                padding: .1rem .7rem .2rem;
+                border-radius: 5px;
+                font-size: .9rem;
+                color: $white-clr;
+                background-color: $blue-clr;
+            }
+        }
+
+        .mark-all-as-read {
+            cursor: pointer;
+            font-size: .85rem;
+            color: $dark-grayish-blue-clr;
+
+            &:hover {
+                color: $blue-clr;
+            }
+        }
+    }
+
+    .container__second {
+        display: grid;
+        row-gap: .9rem;
+        margin-top: 1.5rem;
+
+        .notifications {
+            display: flex;
+            align-items: flex-start;
+            padding: 1rem 1.5rem;
+            gap: .9rem;
+
+            .user__image {
+                height: auto;
+                width: 100%;
+                display: block;
+                max-width: 35px;
+            }
+
+            .notifications__details {
+                .notifications__content {
+                    font-size: .85rem;
+                    color: $dark-grayish-blue-clr;
+
+                    .user__name {
+                        cursor: pointer;
+                        color: $black-clr;
+                        font-weight: 800;
+
+                        &:hover {
+                            color: $blue-clr;
+                        }
+                    }
+
+                    .post__title {
+                        cursor: pointer;
+                        font-weight: 800;
+
+                        &:hover {
+                            color: $blue-clr;
+                        }
+                    }
+
+                    .group__title {
+                        cursor: pointer;
+                        font-weight: 800;
+                        color: $blue-clr;
+                    }
+
+                    .notifications__red-circle {
+                        font-size: .45rem;
+                        border-radius: 50%;
+                        color: $red-clr;
+                    }
+                }
+
+                .notifications__time {
+                    margin-top: .2rem;
+                    font-size: .8rem;
+                    color: $grayish-blue-clr;
+                }
+
+                .notifications__private-message {
+                    cursor: pointer;
+                    margin-top: .8rem;
+                    padding: 1rem;
+                    border: 1px solid $light-grayish-blue-clr-2;
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: $light-grayish-blue-clr-1;
+                    }
+
+                    p {
+                        font-size: .8rem;
+                        color: $dark-grayish-blue-clr;
+                    }
+                }
+            }
+
+            .post__picture {
+                cursor: pointer;
+                height: auto;
+                width: 100%;
+                display: block;
+                max-width: 35px;
+                margin-left: auto;
+            }
+        }
+
+        .unread {
+            background-color: $very-light-grayish-blue-clr;
+        }
+    }
+}
+
+/* LAPTOP */
+@media screen and (min-width: 769px) {
+    body {
+        background-color: $very-light-grayish-blue-clr;
+        padding: 3.5rem;
+    }
+
+    .main {
+        max-width: 615px;
+        margin: 0 auto;
+        padding: 1.7rem 1.5rem 0;
+        border-radius: 8px;
+        background-color: $white-clr;
+        box-shadow: 0px 15px 30px -1px hsl(219, 85%, 26%, 10%);
+
+        .container__second {
+            row-gap: .5rem;
+        }
+    }
+}

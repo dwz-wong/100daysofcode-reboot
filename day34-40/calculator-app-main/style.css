@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+/* THEME 1 */
+/* main background */
+/* toggle background, keypad background */
+/* screen background */
+/* key background */
+/* key shadow */
+/* key background, toggle */
+/* key shadow */
+/* key background */
+/* key shadow */
+/* THEME 2 */
+/* main background */
+/* toggle background, keypad background */
+/* screen background */
+/* key background */
+/* key shadow */
+/* key background, toggle */
+/* key shadow */
+/* key background */
+/* key shadow */
+/* THEME 3 */
+/* main background */
+/* toggle background, keypad background, screen background */
+/* key background */
+/* key shadow */
+/* key background, toggle */
+/* key shadow */
+/* key background */
+/* key shadow */
+/* FONT FAMILY */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+  color: red;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: hsl(222, 26%, 31%);
+}
+
+.main {
+  padding: 2.5rem 2rem 0;
+}
+.main .container__one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .container__one h1 {
+  color: hsl(0, 0%, 100%);
+}
+.main .container__one .theme {
+  display: flex;
+  gap: 1.8rem;
+  width: 100%;
+  max-width: 150px;
+}
+.main .container__one .theme h2 {
+  margin-bottom: 0.3rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  align-self: flex-end;
+}
+.main .container__one .theme .theme__container {
+  position: relative;
+  width: 100%;
+}
+.main .container__one .theme .theme__container .theme__nums {
+  display: flex;
+  justify-content: space-around;
+  color: hsl(0, 0%, 100%);
+  font-size: 0.8rem;
+}
+.main .container__one .theme .theme__container .theme__btn {
+  cursor: pointer;
+  height: 25px;
+  margin-top: 0.5rem;
+  padding: 0.3rem;
+  border-radius: 50px;
+  background-color: hsl(223, 31%, 20%);
+}
+.main .container__one .theme .theme__container .theme__btn .fa-circle {
+  position: absolute;
+  left: 0.3rem;
+  color: hsl(6, 63%, 50%);
+  transition: left 3s;
+}
+.main .container__one .theme .theme__container .theme__btn .fa-circle:hover {
+  filter: brightness(150%);
+}
+.main .container__two {
+  margin-top: 2rem;
+  padding: 1.6rem 1.5rem;
+  border-radius: 8px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 36%, 15%);
+  text-align: right;
+  overflow: hidden;
+}
+.main .container__two h1 {
+  margin-top: 1rem;
+  font-size: 2.3rem;
+}
+.main .container__three {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 1.5rem;
+  padding: 1.3rem;
+  border-radius: 8px;
+  -moz-column-gap: 0.8rem;
+       column-gap: 0.8rem;
+  row-gap: 1rem;
+  background-color: hsl(223, 31%, 20%);
+  grid-template-areas: "seven eight nine del" "four five six plus" "one two three minus" "dot zero divide multiply" "reset reset equal equal";
+}
+.main .container__three .calc__btns {
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  color: hsl(221, 14%, 31%);
+  background-color: hsl(30, 25%, 89%);
+  font-family: "League Spartan", sans-serif;
+}
+.main .container__three .calc__btns:hover {
+  filter: brightness(150%);
+}
+.main .container__three .calc__btns:not(.reset):not(.equal) {
+  padding: 1rem;
+}
+.main .container__three .calc__btns:not(.del):not(.reset):not(.equal) {
+  font-size: 1.8rem;
+  box-shadow: 0px 4px 0px 0px hsl(28, 16%, 65%);
+}
+.main .container__three .seven {
+  grid-area: seven;
+}
+.main .container__three .eight {
+  grid-area: eight;
+}
+.main .container__three .nine {
+  grid-area: nine;
+}
+.main .container__three .del {
+  grid-area: del;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(225, 21%, 49%);
+  text-transform: uppercase;
+  box-shadow: 0px 4px 0px 0px hsl(224, 28%, 35%);
+}
+.main .container__three .four {
+  grid-area: four;
+}
+.main .container__three .five {
+  grid-area: five;
+}
+.main .container__three .six {
+  grid-area: six;
+}
+.main .container__three .plus {
+  grid-area: plus;
+}
+.main .container__three .one {
+  grid-area: one;
+}
+.main .container__three .two {
+  grid-area: two;
+}
+.main .container__three .three {
+  grid-area: three;
+}
+.main .container__three .minus {
+  grid-area: minus;
+}
+.main .container__three .dot {
+  grid-area: dot;
+}
+.main .container__three .zero {
+  grid-area: zero;
+}
+.main .container__three .divide {
+  grid-area: divide;
+}
+.main .container__three .multiply {
+  grid-area: multiply;
+}
+.main .container__three .reset {
+  grid-area: reset;
+  padding: 1.3rem 1rem;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(225, 21%, 49%);
+  text-transform: uppercase;
+  box-shadow: 0px 4px 0px 0px hsl(224, 28%, 35%);
+}
+.main .container__three .equal {
+  grid-area: equal;
+  padding: 1.3rem 1rem;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0px 4px 0px 0px hsl(6, 70%, 34%);
+}
+
+@media screen and (min-width: 481px) {
+  .main {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+  .main .container__three {
+    padding: 1.5rem;
+    -moz-column-gap: 1.2rem;
+         column-gap: 1.2rem;
+    row-gap: 1.4rem;
+  }
+  .main .container__three .calc__btns:not(.reset):not(.equal) {
+    padding: 0.7rem 0 0.4rem;
+  }
+  .main .container__three .reset, .main .container__three .equal {
+    padding: 1rem 0 0.8rem;
+  }
+}/*# sourceMappingURL=style.css.map */

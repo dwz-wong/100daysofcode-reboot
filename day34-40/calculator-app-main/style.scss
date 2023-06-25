@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+$white-clr: hsl(0, 0%, 100%);
+/* THEME 1 */
+$t1-very-dark-desaturated-blue-1: hsl(222, 26%, 31%); /* main background */
+$t1-very-dark-desaturated-blue-2: hsl(223, 31%, 20%); /* toggle background, keypad background */
+$t1-very-dark-desaturated-blue-3: hsl(224, 36%, 15%); /* screen background */
+$t1-desaturated-dark-blue-1: hsl(225, 21%, 49%); /* key background */
+$t1-desaturated-dark-blue-2: hsl(224, 28%, 35%); /* key shadow */
+$t1-red: hsl(6, 63%, 50%); /* key background, toggle */
+$t1-dark-red: hsl(6, 70%, 34%); /* key shadow */
+$t1-light-grayish-orange: hsl(30, 25%, 89%); /* key background */
+$t1-grayish-orange: hsl(28, 16%, 65%); /* key shadow */
+$t1-very-dark-grayish-blue: hsl(221, 14%, 31%);
+/* THEME 2 */
+$t2-light-gray: hsl(0, 0%, 90%); /* main background */
+$t2-grayish-red: hsl(0, 5%, 81%); /* toggle background, keypad background */
+$t2-very-light-gray: hsl(0, 0%, 93%); /* screen background */
+$t2-dark-moderate-cyan: hsl(185, 42%, 37%); /* key background */
+$t2-very-dark-cyan: hsl(185, 58%, 25%); /* key shadow */
+$t2-orange: hsl(25, 98%, 40%); /* key background, toggle */
+$t2-dark-orange: hsl(25, 99%, 27%); /* key shadow */
+$t2-light-grayish-yellow: hsl(45, 7%, 89%); /* key background */
+$t2-dark-grayish-orange: hsl(35, 11%, 61%); /* key shadow */
+$t2-very-dark-grayish-yellow: hsl(60, 10%, 19%);
+/* THEME 3 */
+$t3-very-dark-violet-1: hsl(268, 75%, 9%); /* main background */
+$t3-very-dark-violet-2: hsl(268, 71%, 12%); /* toggle background, keypad background, screen background */
+$t3-dark-violet: hsl(281, 89%, 26%); /* key background */
+$t3-vivid-magenta: hsl(285, 91%, 52%); /* key shadow */
+$t3-pure-cyan: hsl(176, 100%, 44%); /* key background, toggle */
+$t3-soft-cyan: hsl(177, 92%, 70%); /* key shadow */
+$t3-very-dark-violet: hsl(268, 47%, 21%); /* key background */
+$t3-dark-magenta: hsl(290, 70%, 36%); /* key shadow */
+$t3-light-yellow: hsl(52, 100%, 62%);
+$t3-very-dark-blue: hsl(198, 20%, 13%);
+/* FONT FAMILY */
+$league-spartan-font: 'League Spartan', sans-serif;
+
+.attribution { font-size: 11px; text-align: center; color: $white-clr; }
+.attribution a { color: red; }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $league-spartan-font;
+    background-color: $t1-very-dark-desaturated-blue-1;
+}
+
+.main {
+    padding: 2.5rem 2rem 0;
+    
+    .container__one {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            color: $white-clr;
+        }
+
+        .theme {
+            display: flex;
+            gap: 1.8rem;
+            width: 100%;
+            max-width: 150px;
+
+            h2 {
+                margin-bottom: .3rem;
+                font-size: .8rem;
+                letter-spacing: .1rem;
+                color: $white-clr;
+                text-transform: uppercase;
+                align-self: flex-end;
+            }
+
+            .theme__container {
+                position: relative;
+                width: 100%;
+
+                .theme__nums {
+                    display: flex;
+                    justify-content: space-around;
+                    color: $white-clr;
+                    font-size: .8rem;
+                }
+
+                .theme__btn {
+                    cursor: pointer;
+                    height: 25px;
+                    margin-top: .5rem;
+                    padding: .3rem;
+                    border-radius: 50px;
+                    background-color: $t1-very-dark-desaturated-blue-2;
+
+                    .fa-circle {
+                        position: absolute;
+                        left: .3rem;
+                        color: $t1-red;
+                        transition: left 3s;
+
+                        &:hover {
+                            filter: brightness(150%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container__two {
+        margin-top: 2rem;
+        padding: 1.6rem 1.5rem;
+        border-radius: 8px;
+        color: $white-clr;
+        background-color: $t1-very-dark-desaturated-blue-3;
+        text-align: right;
+        overflow: hidden;
+
+        h1 {
+            margin-top: 1rem;
+            font-size: 2.3rem;
+        }
+    }
+
+    .container__three {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 1.5rem;
+        padding: 1.3rem;
+        border-radius: 8px;
+        column-gap: .8rem;
+        row-gap: 1rem;
+        background-color: $t1-very-dark-desaturated-blue-2;
+        grid-template-areas: 
+        "seven eight nine del"
+        "four five six plus"
+        "one two three minus"
+        "dot zero divide multiply"
+        "reset reset equal equal";
+
+        .calc__btns {
+            cursor: pointer;
+            border: none;
+            border-radius: 7px;
+            color: $t1-very-dark-grayish-blue;
+            background-color: $t1-light-grayish-orange;
+            font-family: $league-spartan-font;
+
+            &:hover {
+                filter: brightness(150%);
+            }
+
+            &:not(.reset):not(.equal) {
+                padding: 1rem;
+            }
+
+            &:not(.del):not(.reset):not(.equal) {
+                font-size: 1.8rem;
+                box-shadow: 0px 4px 0px 0px $t1-grayish-orange;
+            }
+        }
+
+        .seven {
+            grid-area: seven;
+        }
+
+        .eight {
+            grid-area: eight;
+        }
+
+        .nine {
+            grid-area: nine;
+        }
+
+        .del {
+            grid-area: del;
+            font-size: 1.2rem;
+            color: $white-clr;
+            background-color: $t1-desaturated-dark-blue-1;
+            text-transform: uppercase;
+            box-shadow: 0px 4px 0px 0px $t1-desaturated-dark-blue-2;
+        }
+
+        .four {
+            grid-area: four;
+        }
+
+        .five {
+            grid-area: five;
+        }
+
+        .six {
+            grid-area: six;
+        }
+        
+        .plus {
+            grid-area: plus;
+        }
+
+        .one {
+            grid-area: one;
+        }
+
+        .two {
+            grid-area: two;
+        }
+
+        .three {
+            grid-area: three;
+        }
+
+        .minus {
+            grid-area: minus;
+        }
+
+        .dot {
+            grid-area: dot;
+        }
+
+        .zero {
+            grid-area: zero;
+        }
+
+        .divide {
+            grid-area: divide;
+        }
+
+        .multiply {
+            grid-area: multiply;
+        }
+
+        .reset {
+            grid-area: reset;
+            padding: 1.3rem 1rem;
+            font-size: 1.2rem;
+            color: $white-clr;
+            background-color: $t1-desaturated-dark-blue-1;
+            text-transform: uppercase;
+            box-shadow: 0px 4px 0px 0px $t1-desaturated-dark-blue-2;
+        }
+
+        .equal {
+            grid-area: equal;
+            padding: 1.3rem 1rem;
+            font-size: 1.2rem;
+            color: $white-clr;
+            background-color: $t1-red;
+            box-shadow: 0px 4px 0px 0px $t1-dark-red;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .main {
+        max-width: 470px;
+        margin: 0 auto;
+
+        .container__three {
+            padding: 1.5rem;
+            column-gap: 1.2rem;
+            row-gap: 1.4rem;
+
+            .calc__btns {
+
+                &:not(.reset):not(.equal) {
+                    padding: .7rem 0 .4rem;
+                }
+            }
+
+            .reset, .equal {
+                padding: 1rem 0 .8rem;
+            }
+        }
+    }
+}

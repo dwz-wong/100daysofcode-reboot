@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/cb6a4e11b3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main class="main">
+    <div class="container__one">
+      <h1>calc</h1>
+      <div class="theme">
+        <h2>Theme</h2>
+        <div class="theme__container">
+          <div class="theme__nums">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+
+          <div class="theme__btn" id="theme__btn">
+            <i class="fa-solid fa-circle" id="circle"></i>
+          </div>
+
+          <input type="hidden" name="theme__value" id="theme__value" value="1">
+        </div>
+      </div>
+    </div>
+
+    <div class="container__two">
+      <div>
+        <p></p>
+      </div>
+      <h1>0</h1>
+    </div>
+
+    <div class="container__three">
+      <button class="calc__btns seven">7</button>
+      <button class="calc__btns eight">8</button>
+      <button class="calc__btns nine">9</button>
+      <button class="calc__btns del">Del</button>
+      <button class="calc__btns four">4</button>
+      <button class="calc__btns five">5</button>
+      <button class="calc__btns six">6</button>
+      <button class="calc__btns plus">+</button>
+      <button class="calc__btns one">1</button>
+      <button class="calc__btns two">2</button>
+      <button class="calc__btns three">3</button>
+      <button class="calc__btns minus">-</button>
+      <button class="calc__btns dot">.</button>
+      <button class="calc__btns zero">0</button>
+      <button class="calc__btns divide">/</button>
+      <button class="calc__btns multiply">x</button>
+      <button class="calc__btns reset">Reset</button>
+      <button class="calc__btns equal">=</button>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/dwz-wong">HL Wong</a>.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

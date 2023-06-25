@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+
+.main {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    border: 1px solid red;
+}
+
+.main > h1 {
+    margin-bottom: .3rem;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    align-self: flex-end;
+}
+
+.theme__container {
+    position: relative;
+    width: 100%;
+    max-width: 80px;
+}
+
+.theme__nums {
+    display: flex;
+    justify-content: space-around;
+}
+
+.theme__nums {
+    font-size: .8rem;
+}
+
+.theme__btn {
+    cursor: pointer;
+    height: 25px;
+    margin-top: .5rem;
+    padding: .3rem;
+    /* padding: .3rem .3rem .2rem; */
+    border-radius: 50px;
+    background-color: hsl(223, 31%, 20%);
+}
+
+.fa-circle {
+    position: absolute;
+    left: .3rem;
+    /* left: 1.87em; (2) */
+    /* left: 3.65em; (3) */
+    color: red;
+    transition: left 3s;
+    /*
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    */
+}
+
+/*
+@keyframes move {
+    0% {
+        left: .3rem;
+    }
+
+    50% {
+        left: 1.87em;
+    }
+
+    100% {
+        left: 3.65em;
+    }
+}
+*/
