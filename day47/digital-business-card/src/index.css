@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  --white-clr: rgb(255, 255, 255);
+  --black-clr: rgb(0, 0, 0);
+  --purple-clr: hsl(300, 100%, 25%);
+  --very-dark-grayish-blue-clr: #282D35;
+  --light-gray-70: #b3b3b3;
+  --linkedin-clr: #0e76a8;
+  --inter-font-400-700: 'Inter', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--very-dark-grayish-blue-clr);
+  font-family: var(--inter-font-400-700);
+}
+
+.main {
+  padding: 2rem 0;
+}
+
+.digital-business-card {
+  max-width: 320px;
+  margin: 0 auto;
+  background-color: var(--black-clr);
+  border-radius: 8px;
+}
+
+/* INFO */
+.card__photo {
+  height: auto;
+  width: 100%;
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card__info {
+  padding: 1.5rem;
+  line-height: 1.5;
+}
+
+.info__name {
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--white-clr);
+}
+
+.info__occupation {
+  text-align: center;
+  color: var(--white-clr);
+}
+
+.link__container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.info__links {
+  display: block;
+  width: 100%;
+  padding: .75rem;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.info__links:hover {
+  background-color: var(--light-gray-70);
+}
+
+.link {
+  color: var(--black-clr);
+  background-color: var(--white-clr);
+}
+
+.linkedin {
+  color: var(--white-clr);
+  background-color: #0e76a8;
+}
+
+/* ABOUT */
+.about__container {
+  padding: .5rem 1.5rem 1.5rem;
+  line-height: 1.5;
+}
+
+.about__heading {
+  font-size: 1.2rem;
+  color: var(--white-clr);
+}
+
+.about__description {
+  margin-top: .2rem;
+  color: var(--light-gray-70);
+}
+
+/* INTERESTS */
+.interests__container {
+  padding: 0 1.5rem 1.5rem;
+  line-height: 1.5;
+}
+
+.interests__heading {
+  font-size: 1.2rem;
+  color: var(--white-clr);
+}
+
+.interests__description {
+  margin-top: .2rem;
+  color: var(--light-gray-70);
+}
+
+/* SOCIAL */
+.social__container {
+  padding: 1.5rem 1.5rem 1rem;
+  text-align: center;
+}
+
+.social__link {
+  font-size: 2.2rem;
+  color: var(--white-clr);
+  text-decoration: none;
+}
+
+.social__link:not(:nth-child(1)) {
+  margin-left: 1.5rem;
+}
+
+.social__link:hover {
+  color: var(--light-gray-70);
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 769px) {
+  .digital-business-card {
+    max-width: 350px;
+  }
+}
