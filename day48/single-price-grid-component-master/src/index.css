@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  --white-clr: rgb(255, 255, 255);
+  --black-clr: rgb(0, 0, 0);
+  --cyan-clr: hsl(179, 62%, 43%);
+  --cyan-clr-2: hsl(179, 62%, 55%);
+  --bright-yellow-clr: rgb(192, 223, 52);
+  --light-gray-clr: hsl(204, 43%, 93%);
+  --grayish-blue-clr: hsl(218, 22%, 67%);
+  --karla-font-400-700: 'Karla', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--karla-font-400-700);
+  background-color: var(--light-gray-clr);
+}
+
+.main {
+  padding: 4rem 1.5rem 0;
+}
+
+.single-price-grid__container {
+  filter: drop-shadow(0 0 30px rgb(0, 0, 0, 0.1))
+}
+
+/* Join Community */
+.join-community__container {
+  padding: 2rem 1.5rem;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-color: var(--white-clr);
+}
+
+.join-community__title {
+  font-size: 1.32rem;
+  color: var(--cyan-clr);
+}
+
+.join-community__subtitle {
+  margin-top: 1.6rem;
+  font-weight: 700;
+  color: var(--bright-yellow-clr);
+}
+
+.join-community__description {
+  margin-top: 1.3rem;
+  font-size: .9rem;
+  line-height: 1.8;
+  color: var(--grayish-blue-clr);
+}
+
+/* Monthly Subscription */
+.monthly-subscription__container {
+  padding: 1.8rem 1.5rem;
+  background-color: var(--cyan-clr);
+}
+
+.monthly-subscription__title {
+  font-size: 1.1rem;
+  color: var(--white-clr);
+}
+
+.monthly-subscription__price {
+  display: table;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white-clr);
+}
+
+.monthly-subscription__price > span {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 .8rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--light-gray-clr);
+}
+
+.monthly-subscription__description {
+  margin-top: .5rem;
+  color: var(--white-clr);
+}
+
+.monthly-subscription__sign-up-btn {
+  cursor: pointer;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 6px;
+  color: var(--white-clr);
+  background-color: var(--bright-yellow-clr);
+  font-size: 1rem;
+  font-family: var(--karla-font-400-700);
+  font-weight: 700;
+  box-shadow: 0 10px 30px 0 rgb(0, 0, 0, 0.2);
+}
+
+.monthly-subscription__sign-up-btn:hover {
+  color: var(--black-clr);
+  background-color: rgb(192, 223, 52, 50%);
+}
+
+/* Why Us */
+.why-us__container {
+  padding: 1.8rem 1.5rem;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background-color: var(--cyan-clr-2);
+}
+
+.why-us__title {
+  font-size: 1.2rem;
+  color: var(--white-clr);
+}
+
+.why-us__description {
+  font-size: .9rem;
+  line-height: 1.5;
+  color: var(--light-gray-clr);
+}
+
+.tutorials {
+  margin-top: 1.3rem;
+}
+
+/* Attribution */
+.attribution {
+  padding-bottom: 4rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 481px) {
+  .single-price-grid__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'join-community join-community'
+      'monthly-subscription why-us';
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .join-community__container {
+    grid-area: join-community;
+    padding: 2.8rem 2.5rem;
+  }
+
+  .monthly-subscription__container {
+    grid-area: monthly-subscription;
+    padding: 3rem 2.5rem;
+    border-bottom-left-radius: 8px;
+  }
+
+  .why-us__container {
+    grid-area: why-us;
+    padding: 2.7rem 2.5rem;
+    border-bottom-left-radius: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main {
+    padding: 0;
+  }
+
+  .join-community__title {
+    font-size: 1.5rem;
+  }
+
+  .join-community__subtitle {
+    font-size: 1.125rem;
+  }
+
+  .join-community__description {
+    margin-top: .9rem;
+    font-size: 1rem;
+  }
+
+  .monthly-subscription__title {
+    font-size: 1.2rem;
+  }
+  
+  .why-us__title {
+    font-size: 1.25rem;
+  }
+}
