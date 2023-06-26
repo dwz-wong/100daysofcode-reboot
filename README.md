@@ -161,7 +161,8 @@
         [Challenge Page](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv) | [Solution](https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-xqIJWFEJ_v) | [Code](https://github.com/dwz-wong/100daysofcode-reboot/tree/main/day25-27/newsletter-sign-up-with-success-message-main) | [Live](https://day25-27-of-100days-reboot.netlify.app/)
 
 ### Day 28:
-1. Create Skills Progress Bar with CSS Animaiton
+1. Create Skills Progress Bar with CSS Animation
+    ![Skills Progress Bar with CSS Animation](images/day28/Animation.gif)
 
 ### Day 29 - 30:
 - Frontend Mentor:
@@ -189,8 +190,8 @@
     ![CSS Animation Banner Flag](images/day41/css-animation-banner-flag.gif)
 
 ### Day 42 - 43:
-- Tic Tac Toe
-    ![Tic Tac Toe](images/day42-43/Tic%20Tac%20Toe.gif)
+- Tic Tac Toe <br />
+    ![Tic Tac Toe](images/day42-43/Tic%20Tac%20Toe.gif) <br />
     [Code](https://github.com/dwz-wong/100daysofcode-reboot/tree/main/day42-43/tic-tac-toe) | [Live](https://day42-43-of-100days-reboot.netlify.app/)
 
 ### Day 44:
@@ -225,3 +226,4 @@
     ![Single price grid component](images/day48/desktop-preview.jpg)
     <br />
     [Challenge Page](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc) | [Solution](https://www.frontendmentor.io/solutions/single-price-grid-component-Bw-1Twbsiy) | [Code](https://github.com/dwz-wong/100daysofcode-reboot/tree/main/day48/single-price-grid-component-master) | [Live](https://day48-of-100days-reboot.netlify.app/)
+
