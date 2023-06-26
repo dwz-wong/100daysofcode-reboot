@@ -218,12 +218,13 @@
 - Scrimba:
     - Solo Project - Digital Business Card from Scrimba
         ![Digital Business Card Preview](images/day47/digital-business-card-preview.png) <br />
-        ![Digital Business Card](images/day47/digital-business-card.png)
+        ![Digital Business Card](images/day47/digital-business-card.png) <br />
+        [Code](https://github.com/dwz-wong/100daysofcode-reboot/tree/main/day47/digital-business-card) | [Live](https://day47-of-100days-reboot.netlify.app/)
 
 ### Day 48:
 - Frontend Mentor
     - Single price grid component
     ![Single price grid component](images/day48/desktop-preview.jpg)
     <br />
-    [Challenge Page](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc) | [Solution](https://www.frontendmentor.io/solutions/single-price-grid-component-Bw-1Twbsiy) | [Code](https://github.com/dwz-wong/100daysofcode-reboot/tree/main/day48/single-price-grid-component-master) | [Live](https://day48-of-100days-reboot.netlify.app/)
+    [Challenge Page](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc) | [Solution](https://www.frontendmentor.io/solutions/single-price-grid-component-Bw-1Twbsiy) | [Code](https://github.com/dwz-wong/100daysofcode-reboot/tree/main/day47/digital-business-card) | [Live](https://day48-of-100days-reboot.netlify.app/)
 
