@@ -225,7 +225,5 @@
 - Frontend Mentor
     - Single price grid component
     ![Single price grid component](images/day48/desktop-preview.jpg)
-    <br />
-    [Challenge Page](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc) | [Solution](https://www.frontendmentor.io/solutions/single-price-grid-component-Bw-1Twbsiy) | [Code](https://github.com/dwz-wong/100daysofcode-reboot/tree/main/day47/digital-business-card) | [Live](https://day48-of-100days-reboot.netlify.app/)
 
 ### Day 49:
