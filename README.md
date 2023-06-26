@@ -166,20 +166,62 @@
 ### Day 29 - 30:
 - Frontend Mentor:
     - Testimonials grid section
-        ![Testimonials grid section]()
+        ![Testimonials grid section](images/day29-30/desktop-preview.jpg)
         <br />
-        [Challenge Page]() | [Solution]() | [Code]() | [Live]()
+        [Challenge Page](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7) | [Solution](https://www.frontendmentor.io/solutions/testimonials-grid-section-ra20eA_bJm) | [Code](https://github.com/dwz-wong/100daysofcode-reboot/tree/main/day29-30/testimonials-grid-section-main) | [Live](https://day29-30-of-100days-reboot.netlify.app/)
 
 ### Day 31 - 33:
 - Frontend Mentor:
     - Notifications page
-        ![Notifications page]()
+        ![Notifications page](images/day31-33/desktop-preview.jpg)
         <br />
-        [Challenge Page]() | [Solution]() | [Code]() | [Live]()
+        [Challenge Page](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC) | [Solution](https://www.frontendmentor.io/solutions/notifications-page-EakjHRoBCI) | [Code](https://github.com/dwz-wong/100daysofcode-reboot/tree/main/day31-33/notifications-page-main) | [Live](https://day31-33-of-100days-reboot.netlify.app/)
 
-### Day 34 - ??:
+### Day 34 - 40:
 - Frontend Mentor:
     - Calculator app
-        ![Calculator app]()
+        ![Calculator app](images/day34-40/desktop-preview.jpg)
         <br />
-        [Challenge Page]() | [Solution]() | [Code]() | [Live]()
+        [Challenge Page](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29) | [Solution](https://www.frontendmentor.io/solutions/calculator-app-tWGSxxRB1x) | [Code](https://github.com/dwz-wong/100daysofcode-reboot/tree/main/day34-40/calculator-app-main) | [Live](https://day34-40-of-100days-reboot.netlify.app/)
+
+### Day 41:
+1. A day of learning CSS Animation and making banner flag
+    ![CSS Animation Banner Flag](images/day41/css-animation-banner-flag.gif)
+
+### Day 42 - 43:
+- Tic Tac Toe
+    ![Tic Tac Toe](images/day42-43/Tic%20Tac%20Toe.gif)
+    [Code](https://github.com/dwz-wong/100daysofcode-reboot/tree/main/day42-43/tic-tac-toe) | [Live](https://day42-43-of-100days-reboot.netlify.app/)
+
+### Day 44:
+1. Enroll a new course "Learn React" from Scrimba
+    ![Learn React Course from Scrimba](images/day44/learn-react-from-scrimba.png)
+
+### Day 45:
+1. "Learn React" course from Scrimba: <br />
+🚧 Build a React info site (77%) <br />
+🏳️ Build an AirBnB Experiences clone <br />
+🏳️ Build a meme generator <br />
+🏳️ Build a notes app and Tenzies game 
+    ![Learn React Course form Scrimba](images/day45/learn-react-from-scrimba.png)
+         
+### Day 46:
+1. "Learn React" course from Scrimba: <br />
+✅ Build a React info site (98%, Solo Project required to subscribe PRO member) <br />
+🏳️ Build an AirBnB Experiences clone <br />
+🏳️ Build a meme generator <br />
+🏳️ Build a notes app and Tenzies game <br />
+    ![Learn React Course from Scrimba](images/day46/learn-react-from-scrimba.png)
+
+### Day 47:
+- Scrimba:
+    - Solo Project - Digital Business Card from Scrimba
+        ![Digital Business Card Preview](images/day47/digital-business-card-preview.png) <br />
+        ![Digital Business Card](images/day47/digital-business-card.png)
+
+### Day 48:
+- Frontend Mentor
+    - Single price grid component
+    ![Single price grid component](images/day48/desktop-preview.jpg)
+    <br />
+    [Challenge Page](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc) | [Solution](https://www.frontendmentor.io/solutions/single-price-grid-component-Bw-1Twbsiy) | [Code](https://github.com/dwz-wong/100daysofcode-reboot/tree/main/day48/single-price-grid-component-master) | [Live](https://day48-of-100days-reboot.netlify.app/)
