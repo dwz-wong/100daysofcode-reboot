@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+  --white-clr: rgb(255, 255, 255);
+  --black-clr: rgb(0, 0, 0);
+  --light-purple-clr: #8C5AF5;
+  --light-gray-clr: #918E9B;
+  --inter-font-400-500-700: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--inter-font-400-500-700);
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  padding: 1rem;
+  color: var(--white-clr);
+  background-color: var(--light-purple-clr);
+}
+
+.nav__title {
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.fa-earth-america {
+  font-size: 1.5rem;
+}
+
+/* Main */
+.main {
+  display: grid;
+  row-gap: 2rem;
+  padding: 2rem;
+}
+
+/* Card */
+.card {
+  text-align: center;
+}
+
+.left-col {
+  height: 200px;
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.card__image {
+  height: 100%;
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.right-col {
+  margin-top: 2rem;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .85rem;
+}
+
+.fa-location-dot {
+  color: var(--light-purple-clr);
+}
+
+.location__country {
+  margin-left: .5rem;
+  letter-spacing: .15rem;
+  text-transform: uppercase;
+}
+
+.location__view {
+  margin-left: 1rem;
+  color: var(--light-gray-clr);
+}
+
+.place__title {
+  margin-top: .5rem;
+}
+
+.travel__date {
+  margin-top: 1.5rem;
+  font-size: .85rem;
+}
+
+.place__description {
+  margin-top: .9rem;
+  font-size: .85rem;
+  line-height: 1.5;
+}
+
+/* Media Queries */
+@media screen and (min-width: 769px) {
+  .main {
+    margin: 0 auto;
+    max-width: 750px;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+    text-align: left;
+  }
+
+  .right-col {
+    margin: 0;
+  }
+
+  .location {
+    justify-content: flex-start;
+  }
+}
