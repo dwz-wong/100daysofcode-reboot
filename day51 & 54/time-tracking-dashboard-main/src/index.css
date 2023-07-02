@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+  --white-clr: rgb(255, 255, 255);
+  --black-clr: rgb(0, 0, 0);
+  --red-clr: rgb(255, 0, 0);
+  /* Primary */
+  --blue-clr: hsl(246, 80%, 60%);
+  --work-clr: hsl(15, 100%, 70%);
+  --play-clr: hsl(195, 74%, 62%);
+  --study-clr: hsl(348, 100%, 68%);
+  --exercise-clr: hsl(145, 58%, 55%);
+  --social-clr: hsl(264, 64%, 52%);
+  --self-care-clr: hsl(43, 84%, 54%);
+  /* Neutral */
+  --very-dark-blue-clr: hsl(226, 43%, 10%);
+  --dark-blue-clr: hsl(235, 46%, 20%);
+  --desaturated-blue-clr: hsl(235, 45%, 61%);
+  --pale-blue-clr: hsl(236, 100%, 87%);
+  /* Font */
+  --rubik-font-300-400-500: 'Rubik', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--rubik-font-300-400-500);
+  background-color: var(--very-dark-blue-clr);
+}
+
+.main {
+  padding: 3rem 0;
+}
+
+/* Dashboard */
+.dashboard {
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+/* Report Profile */
+.report__container {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 12px;
+  background-color: var(--dark-blue-clr);
+}
+
+.report__profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: var(--blue-clr);
+}
+
+.profile__photo {
+  height: auto;
+  width: 100%;
+  display: block;
+  max-width: 60px;
+  border: .19rem solid var(--white-clr);
+  border-radius: 50%;
+}
+
+.report__profile > div {
+  line-height: 1.3;
+}
+
+.profile__report {
+  font-size: .75rem;
+  color: var(--pale-blue-clr);
+}
+
+.profile__name {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--white-clr);
+}
+
+.report__timeframes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.8rem;
+  font-size: .9rem;
+}
+
+.timeframe {
+  cursor: pointer;
+  color: var(--desaturated-blue-clr);
+}
+
+.timeframe:hover {
+  color: var(--white-clr);
+}
+
+/* Card */
+.card {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0 0;
+  border-radius: 12px;
+  background-color: var(--work-clr);
+  overflow: hidden;
+}
+
+.play {
+  background-color: var(--play-clr);
+}
+
+.study {
+  background-color: var(--study-clr);
+}
+
+.exercise {
+  background-color: var(--exercise-clr);
+}
+
+.social {
+  background-color: var(--social-clr);
+}
+
+.self-care {
+  background-color: var(--self-care-clr);
+}
+
+/* Card Icon */
+.icon__container {
+  position: absolute;
+  max-width: 65px;
+  top: -.5rem;
+  right: 1rem;
+}
+
+.card__icon {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+/* Card Container for Card Category and Card Time */
+.card__container {
+  cursor: pointer; 
+  position: relative;
+  padding: 1.6rem 1.5rem;
+  border-radius: 12px;
+  background-color: var(--dark-blue-clr);
+}
+
+.card__container:hover {
+  background-color: var(--desaturated-blue-clr);
+}
+
+/* Card Category */
+.card__category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.category__title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white-clr);
+}
+
+.category__three-dot {
+  cursor: pointer;
+  height: auto;
+  width: 100%;
+  display: block;
+  max-width: 17px;
+}
+
+.category__three-dot:hover {
+  filter: brightness(1.5)
+}
+
+/* Card Time */
+.card__time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .4rem;
+}
+
+.time__current {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: var(--white-clr);
+}
+
+.time__previous {
+  font-size: .85rem;
+  color: var(--pale-blue-clr);
+}
+
+/* Footer */
+.footer {
+  font-size: 0.688rem;
+  text-align: center;
+}
+
+.footer > p {
+  color: var(--white-clr);
+}
+
+.footer > p > a {
+  color: var(--red-clr);
+}
+
+/* Media Queries */
+@media screen and (min-width: 481px) {
+  .main {
+    padding: 3rem 1.5rem;
+  }
+
+  /* Dashboard */
+  .dashboard {
+    grid-template-areas: 
+      "report report"
+      "work play"
+      "study exercise"
+      "social self-care";
+    column-gap: 1rem;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  /* Report Profile */
+  .report__container {
+    grid-area: report;
+  }
+
+  /* Card */
+  .work {
+    grid-area: work;
+  }
+
+  .play {
+    grid-area: play;
+  }
+
+  .study {
+    grid-area: study;
+  }
+
+  .exercise {
+    grid-area: exercise;
+  }
+
+  .social {
+    grid-area: social;
+  }
+
+  .self-care {
+    grid-area: self-care;
+  }
+
+  /* Card Time */
+  .card__time {
+    justify-content: none;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .8rem;
+    margin-top: 1.3rem;
+  } 
+
+  .time__current {
+    font-size: 2.2rem;
+  }
+
+  .time__previous {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* Dashboard */
+  .dashboard {
+    grid-template-areas:
+      "report work play"
+      "report study exercise"
+      "report social self-care";
+  }
+
+  /* Report Profile */
+  .report__container {
+    max-height: 410px;
+    max-width: 220px;
+    height: 100%;
+    align-self: center;
+  }
+
+  .report__profile {
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 282px;
+    height: 100%;
+    padding: 1.7rem 1.5rem;
+  }
+
+  .profile__photo {
+    max-width: 70px;
+  }
+  
+  .report__profile > div {
+    margin-top: 1rem;
+  }
+
+  .profile__name {
+    font-size: 2rem;
+  }
+  
+  .report__timeframes {
+    flex-direction: column;
+    justify-content: none;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  /* Card Container for Card Category and Card Time */
+  .card {
+    max-width: 205px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .main {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Dashboard */
+  .dashboard {
+    grid-template-areas:
+      "report work play study"
+      "report exercise social self-care";
+    max-width: 900px;
+    width: 100%;
+    row-gap: 1.7rem;
+  }
+
+  /* Report Profile */
+  .report__container {
+    max-height: none;
+  }
+
+  /* Card Time */
+  .card__time {
+    gap: .6rem;
+  }
+
+  .time__current {
+    font-size: 2.5rem;
+  }
+}
